@@ -1,4 +1,7 @@
 # Knitting-Thoughts
+
+https://knittingthoughts.in.net/
+
  A Fully Responsive Open Platform From Bloggers.
  
 A blogging website, that possesses your thoughts.

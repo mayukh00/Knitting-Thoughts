@@ -2,7 +2,7 @@
 
 https://knittingthoughts.in.net/
 
- A Fully Responsive Open Platform From Bloggers.
+ A Fully Responsive Open Blogging Platform.
  
 A blogging website, that possesses your thoughts.
 We believe in sharing thoughts that possess you because you're who your thoughts led you to think you are.

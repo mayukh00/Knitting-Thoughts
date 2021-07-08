@@ -1,0 +1,813 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background: transparent;
+}
+
+body {
+    line-height:1;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html,body{ height:100%; width:100%; background:#fff; font-family: 'Roboto', sans-serif; color:#585d6d;}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+	vertical-align:middle;
+}
+ 
+ol,ul {
+	list-style:none;
+}
+ 
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+input,
+textarea,
+select {
+	*font-size:100%;
+}
+legend {
+	color:#000;
+}
+input[type="radio"]{ vertical-align:middle; margin-bottom:0;}
+
+.clear{ clear:both;}
+a{ text-decoration:none; outline:none; color:#1e1816;}
+input[type="submit"]{ cursor:pointer;}
+input[type="submit"]{display:block; border:none; background:#0199ff; color:#fff; text-align:center; padding:18px 0; font-size:18px; text-transform:uppercase; font-weight:500;}
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+@-moz-document url-prefix() { 
+  input[type="submit"]{
+	line-height:23px;
+  }
+}
+
+/*=======header section=======*/
+.wrapper{ width:100%;}
+.innerwrapper{width:90%;margin:0 auto;/* height: auto; *//* overflow: auto; */position:relative;}
+
+#topSection{ height:100%; min-height:500px;width:100%; max-height: 700px; background:url("../images/work99.jpg") center no-repeat; background-size: cover;}
+.sectionOverlay{height:100%;width:100%;background: rgba(0,0,0,0.2);}
+#topSection #header{ padding:15px 0;}
+#topSection #header h1, #innerheader h1{ background:url(../images/logo_pml.png) no-repeat; width:200px; height:42px; float:left; cursor:pointer;background-size: contain;}
+#topSection #mainNav, #innerheader #mainNav, #mobileNav{width: 481px;float:right;margin-top: 12px;position:relative;}
+#topSection #mainNav li, #innerheader #mainNav li, #mobileNav li{ display:block; margin-left: 45px; float:left;}
+#topSection #mainNav li a, #innerheader #mainNav li a, #mobileNav li a{ font-size:13px; color:#fff; font-weight:500; padding-bottom:12px;}
+#topSection #mainNav li a:hover, #innerheader #mainNav li a:hover, #mobileNav li a:hover{ border-bottom:solid 2px #fff;}
+.playStoreIcon a:hover {border: none!important;}
+.playStoreIcon a img{width: 130px;margin-top: -13px;}
+#innerheader {
+	padding:15px 0;
+	background: #da8276;
+	background: -moz-linear-gradient(left, #da8276 0%, #00579d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#da8276), color-stop(100%,#00579d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #da8276 0%,#00579d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #da8276 0%,#00579d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #da8276 0%,#00579d 100%); /* IE10+ */
+	background: linear-gradient(to right, #da8276 0%,#00579d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da8276', endColorstr='#00579d',GradientType=1 );
+}
+
+#mobileNav{ display:none;}
+.subTitle{ font-size:45px; font-weight:400; text-align:center; color:#fff; padding-top:57px;}
+.subText{ font-size:22px; font-weight:300; text-align:center; color:#fff; display:block; margin-top:30px;}
+
+.schedulePickUp{margin:50px auto 0;/* display: none; */}
+.schedulePickUp h3{ font-size:28px; font-weight:400; text-align:center; color:#fff; padding-top: 20px; margin-bottom: 40px;}
+.schedulePickUp .pickUpInfo{ margin-top:35px;text-align:center;}
+.send_sms input, .send_sms button{width: 196px;border:none;display:inline;min-height: 30px;border-radius:3px;font-size:16px;color:#8A8A8A;font-weight: 500;padding: 4px 8px;margin:2px;margin-left: 2%;margin-top: 27px;border: 1px solid #ccc;}
+.schedulePickUp .pickUpInfo input[type="submit"]{ width:120px; border-radius:3px 3px; display:inline;}
+.schedulePickUp .pickUpInfo input[type="submit"]:hover, #myLocation .checkLocation .locationfields input[type="submit"]:hover, .appLinkInfo input[type="submit"]:hover
+{ background:#0179ff;}
+.schedulePickUp .phoneNo{font-size:22px;color:#fff;font-weight:400;text-align:center;line-height: 24px;margin-top:20px;}
+.schedulePickUp .phoneNo span{ font-weight:500;}
+
+#howItWorks, #myLocation, #testimonails, #Prices, #whyUs, #comingSoon{ padding:170px 0;}
+#howItWorks h3, #myLocation h3, #testimonails h3, #Prices h3, #whyUs h3{ font-size:42px; margin-bottom:30px; color:#37444d; text-align:center; font-weight:300;}
+#howItWorks h4, #myLocation h4, #testimonails h4, #Prices h4, #whyUs h4{ font-size:22px; margin-bottom:55px; color:#80898f; text-align:center; font-weight:300;}
+#howItWorks .hiwSteps{}
+#howItWorks .hiwSteps li{float:left;display:block;width: 33%;}
+#howItWorks .hiwSteps li span{ display:block; width:170px; height:170px; margin:0 auto;}
+#howItWorks .hiwSteps li span.mobileNo{ background:url(../images/enterMobileNo.jpg) center no-repeat;}
+#howItWorks .hiwSteps li span.pickRider{ background:url(../images/deliveryRider.jpg) center no-repeat;}
+#howItWorks .hiwSteps li span.delivery{ background:url(../images/expressDelivery.jpg) center no-repeat;}
+#howItWorks .hiwSteps li h5{font-size:20px; margin:30px 0 20px; color:#37444d; text-align:center; font-weight:400;}
+#howItWorks .hiwSteps li p{font-size:16px; color:#8e98a0; text-align:center; font-weight:300; line-height:30px}
+
+#myLocation .checkLocation{ width:610px; margin:0 auto;}
+#myLocation .checkLocation h5{font-size:20px; margin:30px 0 20px; color:#37444d; text-align:center; font-weight:300; margin:70px 0 25px;}
+#myLocation .checkLocation .locationfields{ margin-top:-15px}
+#myLocation .checkLocation .locationfields input[type="text"], input[type="email"], input[type="number"]{ width:375px; border:solid 1px #d3dde3; border-right:none; display:block; border-radius:3px 0 0 3px; float:left; font-size:16px; color:#37444d; font-weight:300; padding:18px 20px 19px;}
+#myLocation .checkLocation .locationfields input[type="submit"]{ width:165px; border-radius:0 3px 3px 0; float:left;}
+#myLocation .locationMap{ background:url("../images/map2.jpg") center no-repeat; width:850px; height:397px; margin:45px auto 0;}
+
+#testimonails .testimonailsBox{}
+#testimonails .testimonailsBox li{ float:left; display:block; width:322px; margin-right:80px;}
+#testimonails .testimonailsBox li.last-child{ margin-right:0;}
+#testimonails .testimonailsBox li .testimonailsText{ 
+	background:#f7f7f7;
+	border-radius:6px;
+	-webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+	-moz-box-shadow:0 3px 0 rgba(0, 0, 0, 0.05);
+	box-shadow:0 3px 0 rgba(0, 0, 0, 0.05);
+	padding:28px;
+	position:relative;
+	height:184px;
+}
+#testimonails .testimonailsBox li .testimonailsText p{ font-size:15px; color:#8e98a0; font-weight:400; line-height:26px;}
+#testimonails .testimonailsBox li .testimonailsText p:after{ content:''; background:url(../images/apostropheBot.gif) no-repeat; display:inline-block; margin:-3px 0 0 10px; height:22px; width:27px;}
+#testimonails .testimonailsBox li .testimonailsText p:before{ content:''; background:url(../images/apostropheTop.gif) no-repeat; display:inline-block; margin:-3px 10px 0 0; height:22px; width:27px;}
+#testimonails .testimonailsBox li .testimonailsText:after{ content:''; background:url(../images/testimonailBoxArrow.gif) no-repeat; display:block; height:13px; width:23px; position:absolute;  bottom: -13px; left: 146px;}
+#testimonails .testimonailsBox li .customerInfo{ margin-top:20px;}
+#testimonails .testimonailsBox li .customerInfo img{ display:block; float:left; height:93px; width:94px}
+#testimonails .testimonailsBox li .customerInfo .cusName{ float:left; margin-left:20px; margin-top:18px;}
+#testimonails .testimonailsBox li .customerInfo .cusName p{font-size:16px; color:#37444d; font-weight:400; margin-bottom:10px;}
+#testimonails .testimonailsBox li .customerInfo .cusName span{ display:block; font-size:14px; color:#9da6ad; font-weight:400; margin-bottom:5px;}
+
+#Prices .basicPriceInfo{ width:100%; margin:0 auto;}
+#Prices .basicPriceInfo li{
+    display:block;
+    float:left;
+    border:solid 12px #efefef;
+    border-radius:300px;
+    height: 220px;
+    width: 220px;
+    margin-right: 31px;
+    margin-top: 30px;
+    cursor: pointer;
+    }
+#Prices .basicPriceInfo li.last-child{margin-right:0;}
+#Prices .basicPriceInfo li h5{font-size: 22px; color:#37444d; text-align:center; font-weight:300; margin:60px 0 35px}
+#Prices .basicPriceInfo li p{font-size: 30px; color:#0199ff; font-weight:400; background:url(../images/rupeeIcon.gif) left center no-repeat; padding-left:18px; width:37px; margin:0 auto 12px;}
+#Prices .basicPriceInfo li span{font-size:18px; color:#99a1a5; text-align:center; font-weight:300; display:block}
+.pricelistLink{ border:solid 1px #0199ff; font-size:18px; font-weight:400; color:#0199ff; text-transform:uppercase; border-radius:3px; padding-left:100px; background:#FFF; width:318px; line-height:55px; margin:55px auto 0; display:block;}
+.pricelistLink:hover{ border:solid 1px #0173ff; color:#0173ff;background: #0173ff;color: white;transition: background 1s;}
+
+#priceList{ background:#fff; padding-bottom:80px;}
+#priceList h4{ font-size:24px; color:#37444d; line-height:65px; font-weight:300; text-align:center; text-transform:uppercase; border-bottom:solid 1px #f0f0f0; border-top:solid 1px #f0f0f0;}
+.leftsection, .rightsection{ float:left; width:419px; padding:45px 0;}
+.leftsection{ border-right:solid 1px #f0f0f0; padding-right:150px;}
+.rightsection{ padding-left:150px;}
+.leftsection h5, .rightsection h5, .PricesFeatures .pfeaures h5 .listSec h5{ font-size:24px; margin-bottom:35px; color:#37444d; font-weight:300; background:url(../images/headingLine.gif) left bottom no-repeat; padding-bottom:17px;}
+.listSec li{ display:block; margin-bottom:25px;}
+.listSec li p{font-size:16px; color:#80898f; font-weight:400; float:left;}
+.listSec li span{ font-size:16px; color:#1c6699; font-weight:400; float:right;}
+.listSec li span:before{ content:''; background:url(../images/rupeeSmallIcon.gif) left center no-repeat; height:12px; width:8px; display:inline-block; margin-right:2px}
+
+.extraMargintop{ margin-top:90px!important;}
+.priceConditions{border-bottom:solid 1px #f0f0f0; border-top:solid 1px #f0f0f0; line-height:65px;}
+.priceConditions p{ float:left; width:50%; font-size:16px; color:#37444d; font-weight:400;}
+
+.PricesFeatures{ width:1140px; margin:50px auto 0;}
+.PricesFeatures .pfeaures{ float:left; width:50%;}
+.PricesFeatures .pfeaures li{ font-size:15px; color:#80898f; font-weight:400; background:url(../images/listIcon.gif) left 7px no-repeat; margin-bottom:25px; padding-left:20px; line-height:26px;}
+
+.whyPoints .mainPoints{ float:left; width:385px;}
+.centerImg{ width:370px; background:url(../images/h6a.jpg) center no-repeat; height:450px; float:left;}
+.whyPoints .mainPoints li{ display:block; margin-bottom:48px;}
+.whyPoints .mainPoints li span{ display:block; float:left; width:81px; height:81px;}
+.whyPoints .mainPoints li span.ecofriendly{ background:url(../images/whyUsSprite.gif) 0 -324px no-repeat;}
+.whyPoints .mainPoints li span.convenience { background:url(../images/whyUsSprite.gif) 0 -243px no-repeat;}
+.whyPoints .mainPoints li span.quality { background:url(../images/whyUsSprite.gif) 0 -81px no-repeat;}
+.whyPoints .mainPoints li span.affordable { background:url(../images/whyUsSprite.gif) 0 0 no-repeat;}
+.whyPoints .mainPoints li span.packaging{background:url(../images/whyUsSprite.gif) 0 -405px no-repeat;}
+.whyPoints .mainPoints li span.community{ background:url(../images/whyUsSprite.gif) 0 -162px no-repeat;}
+.whyPoints .mainPoints li .pointText{ float:right; width:280px;}
+.whyPoints .mainPoints li .pointText h6{font-size:20px; color:#37444d; font-weight:400; margin-bottom:17px;}
+.whyPoints .mainPoints li .pointText p{font-size:16px; color:#80898f; font-weight:300; line-height:27px;}
+
+#comingSoon h3{ font-size:48px; margin-bottom:30px; color:#37444d; font-weight:300;}
+#comingSoon h4{ font-size:24px; margin-bottom: -8px; color:#80898f; font-weight:300; line-height:36px}
+#comingSoon .appInfo{ width:490px; margin-top:60px;}
+#comingSoon .appInfo .appStore, #comingSoon .appInfo .playStore{ cursor:default; margin-right:35px; margin-bottom:70px; height:53px; display:inline-block; text-indent:-9999px;}
+#comingSoon .appInfo .appStore{ background:url(../images/appStore.jpg) no-repeat; width:156px;}
+#comingSoon .appInfo .playStore{ background:url(../images/playStore.jpg) no-repeat; width:150px;}
+
+.appLinkInfo input[type="submit"]{ width:160px; border-radius:3px;}
+.appLinkInfo input[type="text"], input[type="email"], input[type="number"]{ width:290px; background:#f7f7f7;}
+
+.appImg{ background:url(../images/mobileApp.jpg) no-repeat; width:349px; height:450px; position:absolute; bottom:-170px; right:0;}
+
+
+#footer{background:#272d31;height: auto;padding-top:60px;}
+#footer .aboutUs{ float:left; width:500px; margin-right:110px;}
+#footer .aboutUs h6, #footer .services h6, #footer .contact h6{ font-size:24px; color:#fff; font-weight:400; margin-bottom:35px;}
+#footer .aboutUs p{ font-size:14px; color:#c4cfd6; font-weight:400; margin-bottom:35px; line-height:26px;}
+#footer .services, #footer .contact{ float:left; width:230px;}
+#footer .services li{ font-size:14px; color:#c4cfd6; font-weight:400; margin-bottom:14px;}
+#footer .contact p{ font-size:14px; color:#c4cfd6; font-weight:400; padding-left:35px; margin-bottom:25px;}
+#footer .contact p.phone{ background:url(../images/mobileIcon.gif) left center no-repeat;}
+#footer .contact p.mail{ background:url(../images/mailIcon.gif) left center no-repeat;}
+#footer .contact p.timing{ background:url(../images/timeIcon.gif) left center no-repeat;}
+#footer .contact .address{ margin-top:40px;}
+#footer .contact .address h5{font-size:16px; color:#fff; font-weight:500; margin-bottom:10px;}
+#footer .contact .address span{font-size:14px; color:#c4cfd6; font-weight:400; line-height:22px;}
+
+#copyRight{background:#2f353a;height: 120px;/* overflow: auto; */}
+#copyRight p{float: right;/* margin-right:20%; */font-size:14px;color:#c4cfd6;font-weight:400;line-height: 62px;}
+#copyRight a{ color:#c4cfd6; font-weight:400; line-height:62px;}
+#copyRight a:hover{ color:#fff; text-decoration:underline;}
+#copyRight .copyLink{ float:left;  color:#c4cfd6; display:none;}
+#copyRight .copyLink a{ font-size:14px; color:#c4cfd6; font-weight:400; line-height:62px;}
+#copyRight .copyLink a:hover{ color:#fff;}
+#copyRight .social{float: right;width:100px;margin-top:15px;margin-right: 15%;}
+#copyRight .social a{ display:inline-block; height:37px; width:37px; text-indent:-9999px;}
+#copyRight .social a.fb{ background:url(../images/facebookIcon.gif) center no-repeat; margin-right:12px;}
+#copyRight .social a.twitter{ background:url(../images/twitterIcon.gif) center no-repeat;}
+#copyRight p:first-child{float: left;}
+
+#sticky { width:100%; height:70px;  }
+#sticky.stick {
+ position: fixed;
+top: 30;
+z-index: 10000;
+background: #da8276; /* Old browsers */
+background: -moz-linear-gradient(left, #da8276 0%, #00579d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#da8276), color-stop(100%,#00579d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #da8276 0%,#00579d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #da8276 0%,#00579d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #da8276 0%,#00579d 100%); /* IE10+ */
+background: linear-gradient(to right, #da8276 0%,#00579d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da8276', endColorstr='#00579d',GradientType=1 );
+}
+
+.info{height: 200px; width: 100%; background-color: rgba(5, 49, 105, 0.7); /* min-width: 1000px; */border-radius: 19px;}
+.info_icon{float: left;  width: 15%; /* margin-left: 20px; */ height: 100%;}
+.info_icon img{
+    padding-top: 53px;
+ 
+    width: 100px;
+}
+.
+
+#sticky.stick #header{ padding:15px 0; border:none;}
+.smallParallaxImg{ display:none;}
+.smallParallaxImg img{ max-height:100%;    max-width: 100%!important;}
+.mobileMenu{ background:url(../images/mobileMenuIcon.png) center no-repeat; height:25px; width:32px; display:none; float:right; margin:9px 4px 0 0;}
+
+.coverage{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 58px;
+}
+.press{
+    width: 200px;
+    /* min-width: 200px; */
+    float: left;
+    margin-left: 8%;
+}
+.press a{}
+.press a img{
+    width: 100%;
+    max-height: 90px;
+}
+.innerwrapper h4{text-align: center;clear: both;margin-top: 39px;}
+.funder{width: 100%;text-align: center;margin-left: auto;margin-right: auto; height: 100px;}
+.funder img{width: 300px;}
+.innerwrapper h3{text-align: center;}
+#comingSoon{padding: 50px 0;}
+#comingSoon h3{
+    font-size: 31px;
+    font-family: 'Roboto', sans-serif;
+    }
+.mint{width:125px;}
+.inc{width:140px;}
+.gallery{display: none!important;}
+.mob_booking{/* display: inline-block; */height: auto;width: 407px;clear: both;overflow: auto;margin-left: auto;margin-right: auto;/* text-align: center; */}
+.appStoreIcon{    width: 175px;
+    float: left;}
+.appStoreIcon img{width: 100%;}
+ .seperator{    width: 75px;
+    float: none;
+    clear: both;
+    color: white;
+    margin: 0 auto 0 auto;
+    /* margin-top: 23px; */
+    text-align: center;}
+.bookNow{
+    width: 76px;
+    /* max-width: 150px; */
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    text-align: center;
+    padding: 17px 40px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 7px;
+    background: #f57a1d;
+    transition: background 0.5s, border 0.5s;
+    transition-timing-function: ease-in-out;
+    }
+.bookNow:hover{background: #f57a1d;}
+.mob_arrows{display: none;}
+.address p{
+	margin: 0!important;
+	line-height: 2em;
+}
+.address{
+	width: 90%;
+}
+#features{
+	display: none;
+	/* margin-top: 37px; */
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+	background: rgba(4, 60, 119, 0.7);
+	border-radius: 300px;
+}
+.basicPriceInfo li:hover #features{
+	display: block;
+	text-align: center;
+}
+.basicPriceInfo li:hover #Prices_detail{
+	display: none;
+}
+.basicPriceInfo li:hover img{/* opacity: 0.3; */}
+#Prices_detail{margin-top: 0px;}
+.basicPriceInfo li:hover{
+	/* background-color: rgba(4, 60, 119, 0.7); */
+	/* transition: background-color 1s; */
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-position-x: 49%;
+	background-position-y: 45%;
+}
+.wf:hover{background-image: url("../images/wf.jpg");}
+.wi:hover{background-image: url("../images/wi.png");}
+.pl:hover{background-image: url("../images/pl.jpg");background-size: 100% 100%!important;background-position: 0 0!important;}
+.dc:hover{background-image: url("../images/Blazer_Canva.png");}
+#features p{
+	width: 80%!important;
+	z-index: 10000;
+	padding: 0 20px!important;
+	text-align: center!important;
+	color: white!important;
+	background: none!important;
+	font-size: 16px!important;
+}
+#features h4{
+	color: white!important;
+    margin-bottom: 30px!important;
+    text-decoration: underline!important;
+}
+#Prices .basicPriceInfo ul{width: 1070px;}
+.background_image{width: 180px;height: 164px;opacity: 0;margin-left: 20px;margin-top: 10px;/* margin-right: auto; */}
+.basicPriceInfo ul{margin-left: auto;margin-right: auto;}
+.tax{font-size: 12px!important; margin-left: 18px; margin-bottom: 10px;}
+#features a{color: white;    font-weight: bold;}
+#features a:hover{text-decoration: underline;}
+#last_feature{margin-bottom: 40px!important;}
+#features p:first-child{padding-top: 37px!important;}
+.send_sms{
+	    height: 95px;
+	    background: #f5f5f5;
+}
+.send_sms div{
+	width: 100%;
+    float: left;
+    text-align: center;
+}
+.send_sms h5{
+	display: inline-block;
+    font-size: 19px;
+    margin-right: 31px;
+    margin-top: 33px;
+}
+.send_sms a{
+    width: 130px;
+    float: right;
+    margin-top: 21px;
+    margin-right: 25px;
+}
+.send_sms a img{
+	width: 130px;
+}
+.send_sms .btn{
+	width: 166px;
+	margin-left: -13px;
+	background: #78C091;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: -6px;
+	border: 1px solid #78C091;
+	color: #fff;
+	cursor: pointer;
+}
+.send_sms .btn:hover{
+	background: #5FA778;
+}
+.send_sms input:focus, .send_sms button:focus{
+	outline: none;
+}
+.login{
+	border: 1px solid #fff;
+	padding: 7px 20px;
+	margin-top: -7px;
+	margin-left: 30px!important;
+	border-radius: 3px;
+	transition: background 0.3s, border 0.3s;
+	transition-property: ease-in-out;
+	cursor: pointer;
+}
+.login:hover{
+	    background: #f57a1d;
+    border-color: #f57a1d;
+}
+.login a{cursor: pointer;}
+.login a:hover{border-bottom: none!important;}
+.account{
+	background: #ccc;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.account img{
+	border-radius: 110px;
+    background: #989595;
+    width: 23%;
+    margin: 10px auto;
+    margin-left: 38%;
+}
+.profile_name{
+	color: #000;
+    text-align: center;
+}
+.account .my_order{
+	    width: 74px;
+    margin: 12px auto;
+    border: 1px solid #fff;
+    padding: 6px 15px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    color: #222;
+}
+.book_icon{
+	    float: none;
+    clear: both;
+    width: 156px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.play_store{
+	margin-left: 13px;
+}
+.app_store{
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+.sms_info{    margin: 7px auto;}
+.error{margin-left: 30px;color: #f57a1d;display: none;}
+.get_app img{width: 20px;
+     display: none; 
+    float: left;
+    margin-left: 11px;}
+.offer{    color: #ddd;
+    font-size: 17px;
+    word-spacing: 1px;
+line-height: 1.5em;}
+.condition{font-size: 14px;
+    margin-top: -5px;
+    margin-left: 1px;
+    position: absolute;}
+.code{    color: #f57a1d;
+    margin-left: 4px;
+    font-weight: 500;}
+@media screen and (max-width:1100px){
+	.innerwrapper{ width:96%;}
+
+
+}
+
+@media screen and (max-width:1024px){
+	.coverage {    width: 500px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;}
+    .mint{clear: both;margin-right: 96px;margin-top: 24px;}
+	.info_icon { width: 100px;}
+	.innerwrapper{ width: 100%;}
+	#howItWorks .hiwSteps li{width: 33%;}
+	#testimonails .testimonailsBox li{ width:300px; margin-right: 33px;}
+	.whyPoints .mainPoints{width: 298px;}
+	.whyPoints .mainPoints li .pointText{ width:200px;}
+	#footer .aboutUs{  width: 450px; margin-right: 50px}
+	#topSection #mainNav li, #innerheader #mainNav li, #mobileNav li{margin-left: 25px;}
+	.playStoreIcon a img{ width: 100px;}
+	#mobileNav{ display:none;}
+	#Prices .basicPriceInfo ul{width: 552px;}
+
+}
+@media screen and (max-width: 850px){
+	#timing .info_content{width: 71%;}
+	#contact .info_content{width: 70%;}
+	#location .info_content{ width: 75%;}
+	#location .info_content input{ width: 23%; margin-top: 5px;margin-left: 8px; float: left;}
+	#location .info_content #address{ width: 30%;}
+	#timing input { width: 27%; margin-left: 9%;}
+	#timing .info_content #delivery_date{margin-left: 21%;}
+	.dropdown{margin-top: 42px; margin-left: 5px;}
+	#mobileNav{ display:none;}
+	#topSection #mainNav li, #innerheader #mainNav li, #mobileNav li{margin-left: 20px;}
+	#topSection #mainNav, #innerheader #mainNav, #mobileNav{ width: 500px;}
+}
+@media screen and (max-width:800px){
+	.innerwrapper{ width:96%;}
+	#myLocation .locationMap{width:700px; height:327px;}
+	#howItWorks .hiwSteps li{width: 32%;margin-left: 1%;}
+	#howItWorks .hiwSteps li h5{font-size: 15px;font-weight: 500;}
+	#howItWorks .hiwSteps li p{font-size: 14px;}
+	#testimonails .testimonailsBox li{ width: 225px; margin-right: 20px;}
+	#testimonails .testimonailsBox li .testimonailsText{padding: 21px; height: 284px;}
+	#testimonails .testimonailsBox li .testimonailsText:after{ left:99px;}
+	#testimonails .testimonailsBox li .customerInfo img{ float:none; margin:0 auto;}
+	#testimonails .testimonailsBox li .customerInfo .cusName{ float:none; width:100%; text-align:center; margin-left:0;}
+	#Prices .basicPriceInfo{ width:96%; margin:0 auto;}
+	#Prices .basicPriceInfo li{width: 210px; height:200px; margin-right:15px;}
+	#Prices .basicPriceInfo li h5{ margin: 45px 0 35px;}
+	.centerImg{ display:none;}
+	.whyPoints .mainPoints, #comingSoon .appInfo{ width:100%; float:none;}
+	.whyPoints .mainPoints li .pointText{ width:84%;}
+	#footer{ height:auto; padding-bottom:60px;}
+	#footer .services, #footer .contact{ width:50%;}
+	#footer .aboutUs{ float:none; width:100%;}
+	.parallax-container{ display:none;}
+	.smallParallaxImg{ display:block; height:400px; width:100%;}
+	.appImg{ display:none;}
+	#howItWorks, #myLocation, #testimonails, #Prices, #whyUs, #comingSoon{ padding:55px 0;}
+	.subTitle{ font-size:37px; padding-top:60px;}
+	#mobileNav{ display:none;}
+	#topSection #mainNav li, #innerheader #mainNav li, #mobileNav li{margin-left: 20px;}
+	#topSection #mainNav, #innerheader #mainNav, #mobileNav{width: 410px;}
+	.press{margin-left: 3%; min-width: 150px;}
+	.coverage{height: 200px;}
+	.send_sms h5{width: 100%;text-align: center;float: none;}
+	.send_sms {height: 172px;}
+	.new_line{display: none;}
+	#copyRight p:first-child{clear: both;
+    float: left;
+    margin-right: 10%;}
+    .social{
+    margin-right: 5%!important;
+    float: left!important;
+    }
+    #copyRight{height: 141px;}
+
+}
+@media screen and (max-width:650px){
+	#topSection{ max-height: 600px;}
+	#Prices .basicPriceInfo{ width:100%; margin:0 auto;overflow-x: hidden;}
+	#Prices .basicPriceInfo ul{width: 100%;}
+	#location .info_content,#contact .info_content, #timing .info_content{ width: 60%;}
+	#location .info_content{padding-left: 12px;}
+	#contact .info_content #mob,#location .info_content #address{display: block; width: 80%;}
+	#contact .info_content #mob{ margin-left: 16%;}
+	#name, #location .info_content #city, #location .info_content #area, #email{ width: 32%;}
+	/*new*/
+	#mobileNav{display:block;width: 327px;}
+	#mainNav{display: none;}
+	#mobileNav{width:100%;max-width: 275px;float:none;position:absolute;top:44px;right: 0;background:#00579d;z-index:99999;display: none;}
+	#mobileNav li, #innerheader #mobileNav li{ display:block; margin-left:0; float:none; border-bottom:solid 2px #1163a4;}
+	#mobileNav li a, #innerheader #mobileNav li a{font-size:16px;color:#fff;display:block;font-weight:500;padding: 13px 25px;}
+	#mobileNav li a:hover, #innerheader #mobileNav li a:hover{ border-bottom:none;}
+	#mobileNav li:last-child, #innerheader #mobileNav li:last-child{ border-bottom:none;}
+	.mobileMenu{ display:block;}
+	.subTitle{font-size: 20px;}
+
+}
+@media screen and (max-width:550px){
+	#howItWorks .hiwSteps li {width:100%; float:none; margin-bottom:50px}
+	#howItWorks .hiwSteps li h5{font-size: 17px;}
+	#howItWorks .hiwSteps li h5{font-size: 15px;}
+	#location .info_icon, #timing .info_icon,#contact .info_icon{ /* width: 20%; */height: 125px; float: left;}
+	#location .info_content, #timing .info_content, #contact .info_content{ border: none;    width: 100%; float: none;height: 313px;}
+	#location .info_content h3, #timing .info_content h3, #contact .info_content h3{height: 90px;    margin-bottom: 0;    padding-top: 35px;    border-bottom: 1px solid white;    width: 96%;margin-bottom: 10px;}
+	#location .info_content input, #timing .info_content input, #contact .info_content input{ width: 90%!important; padding: 2%;margin-top: 4px;height: 30px;}
+    .press{width: 100%;margin-left: 0;margin-top: 7%;}
+    .press a img{ width: 60%;margin-left: 20%;}
+    .coverage{height: 300px;width: 100%;clear: both;padding-bottom: 151px;}
+
+    #mobileNav{ display:block;width: 285px;}
+	#mainNav{display: none;}
+	.mob_booking{display: block;text-align: center;width: 100%;max-width: 260px;}
+	.pickUpInfo{display: none;}
+	.appStoreIcon{
+    margin-left: auto;
+    max-height: 80px;
+    margin-right: auto;
+ 	}
+	.appStoreIcon a img{/* min-width: 150px; */width: 100%;max-height: 75px;/* margin-left: auto; */}
+	.seperator{
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+	}
+	.navigation{margin-left: 45%;}
+	.send_sms input, .send_sms button{
+		width: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 150px;
+		font-size: 13px;
+	}
+	.send_sms .btn{width: 105px;}
+	.send_sms div h5{
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+	}
+	.app_label{
+		font-size: 14px;
+	}
+	.get_app img {
+    width: 15px;
+	}
+
+	#mobileNav{width:100%;max-width: 275px;float:none;position:absolute;top:44px;right: 0;background:#00579d;z-index:99999;display: none;}
+	#mobileNav li, #innerheader #mobileNav li{ display:block; margin-left:0; float:none; border-bottom:solid 2px #1163a4;}
+	#mobileNav li a, #innerheader #mobileNav li a{font-size:16px;color:#fff;display:block;font-weight:500;padding: 13px 25px;}
+	#mobileNav li a:hover, #innerheader #mobileNav li a:hover{ border-bottom:none;}
+	#mobileNav li:last-child, #innerheader #mobileNav li:last-child{ border-bottom:none;}
+	.mobileMenu{ display:block;}
+	.locationMap, #topSection #mainNav, #innerheader #mainNav{ display:none;}
+	.bookNow{float: none;width: 58%;height: 46px;padding: 0;margin: 0 auto;background: none;/* max-width: 0; */}
+	.book_button{background: #f57a1d;width: 100%;padding-top: 13px;height: 32px;border-radius: 8px;}
+	#testimonails .testimonailsBox li {width: 85%;margin-left: auto;margin-right: auto;float: none;}
+	#testimonails .testimonailsBox li .testimonailsText {height: auto;width: 90%;padding: 20px 5%;}
+	#Prices .basicPriceInfo ul li{float: none;margin: 20px auto!important;}
+	.pricelistLink{width: 190px; padding: 0px 30px;}
+	.price{width: 100%;}
+	#footer .services, #footer .contact{width: 90%;}
+	.play_store{    margin-left: 7px;width: 120px;}
+	.app_store{margin-left: 13px;width: 120px;}
+	.book_icon{width: 220px;}
+	.schedulePickUp .phoneNo{font-size: 16px;}
+
+}
+@media screen and (max-width:480px){
+	#topSection #header h1, #innerheader h1 {background: url(../images/logo_pml.png) no-repeat; width: 180px; height: 30px; background-size: contain; }
+	.mobileMenu {background: url(../images/mobileMenuIcon.png) center no-repeat; height: 19px; width: 32px; background-size: contain;     margin: 5px 4px 0 0;}
+	#Prices .basicPriceInfo{ width:100%; margin:0 auto;overflow-x: hidden;}
+	.subTitle{font-size: 23px;line-height: 34px;padding-top:40px;}
+	.subText{font-size: 17px;}
+	.schedulePickUp .pickUpInfo input[type="submit"], #myLocation .checkLocation .locationfields input[type="submit"], .appLinkInfo input[type="submit"]{ display:block; width:98.5%; clear:both; margin-top:10px; border-radius:3px;}
+	.schedulePickUp .pickUpInfo input[type="text"], input[type="email"], input[type="number"], .appLinkInfo input[type="text"], input[type="email"], input[type="number"]{ float:none; width:89.5%; border-radius:3px;}
+	#howItWorks .hiwSteps li, #testimonails .testimonailsBox li{width:100%; float:none; margin-bottom:50px}
+	#howItWorks, #myLocation, #testimonails, #Prices, #whyUs, #comingSoon{ padding:40px 0;}
+	.smallParallaxImg{ display:block; height:251px;}
+	.parallax-container{ display:none;}
+	#myLocation .checkLocation .locationfields input[type="text"], input[type="email"], input[type="number"]{ float:none; width:90%; border-radius:3px; border:solid 1px #d3dde3;}
+	#myLocation .checkLocation .locationfields input[type="submit"]{ width:100%;}
+	#testimonails .testimonailsBox li .testimonailsText{ height:auto;}
+	#testimonails .testimonailsBox li .testimonailsText::after{left: 220px;}
+	#Prices .basicPriceInfo li, #Prices .basicPriceInfo li:last-child{width:250px;height:250px;float:none;margin: 15px auto;}
+	#Prices .basicPriceInfo li h5{ margin: 70px 0 35px;}
+	.whyPoints .mainPoints li .pointText{ width:75%;}
+	#copyRight p{/* width:350px */line-height: 24px;}
+	#howItWorks h3, #myLocation h3, #testimonails h3, #Prices h3, #whyUs h3, #comingSoon h3{ font-size:30px; margin-bottom:20px;}
+	#howItWorks h4, #myLocation h4, #testimonails h4, #Prices h4, #whyUs h4, #comingSoon h4{ font-size:20px; line-height:38px; margin-bottom:35px;}
+	#comingSoon .appInfo .appStore, #comingSoon .appInfo .playStore{ margin-bottom:30px;}
+	.schedulePickUp{ width:100%;}
+	.leftsection, .rightsection{ width:96%; float:none; padding:20px 0 0; border:none;}
+	#priceList h4{ font-size:20px; line-height:50px;}
+	.listSec li p, .listSec li span{ font-size:13px;}
+	.leftsection h5, .rightsection h5, .PricesFeatures .pfeaures h5 .listSec h5{ font-size:20px;}
+	.PricesFeatures{ width:96%; margin:35px auto 0;}
+	.PricesFeatures .pfeaures, .priceConditions p{ float:none; width:100%;}
+	.priceConditions{ line-height:32px; padding:15px 0}
+	.priceConditions p{ margin-bottom:15px; font-size:14px;}
+	#myLocation .checkLocation{ width:96%; margin:0 auto;}
+	#tawkchat-minified-wrapper{display: none!important;}
+	#location .info_content #city_dropdown{margin-top: 3.2em;width: 94.5%;margin-left: 1.6%;}
+	.coverage{padding-bottom: 100px;}
+	
+}
+@media screen and (max-width:360px){
+	
+	.sectionOverlay{height: 100%;padding-bottom:40px;}
+	.subTitle{ font-size:21px; padding-top:25px; line-height:40px;}
+	.subText{ font-size:18px; margin-top:15px;}
+	.schedulePickUp h3{ font-size:18px;}
+	.schedulePickUp{margin:40px auto}
+	.schedulePickUp .pickUpInfo input[type="text"], input[type="email"], input[type="number"], .appLinkInfo input[type="text"], input[type="email"], input[type="number"],
+	#myLocation .checkLocation .locationfields input[type="text"], input[type="email"], input[type="number"]
+	{ padding:13px 16px; font-size:14px;}
+	input[type="submit"]{ padding: 12px 0; font-size:15px}
+	#howItWorks h4, #myLocation h4, #testimonails h4, #Prices h4, #whyUs h4, #comingSoon h4{ line-height:29px;}
+	.smallParallaxImg{ display:block; height:188px;}
+	#howItWorks h3, #myLocation h3, #testimonails h3, #Prices h3, #whyUs h3, #comingSoon h3{ font-size:28px; line-height:36px;}
+	#myLocation .checkLocation .locationfields input[type="text"], input[type="email"], input[type="number"]{ width:89%;}
+	#myLocation .checkLocation .locationfields input[type="submit"]{width:100%}
+	#howItWorks .hiwSteps li, #testimonails .testimonailsBox li{ width:96%; margin:0 auto 40px;}
+	#testimonails .testimonailsBox li .testimonailsText::after{ left:157px}
+	#copyRight{height: 185px;padding:15px 0;}
+	#copyRight p{/* float:none; */width:100%;font-size: 12px;margin-right:0;/* text-align:center; *//* line-height:30px; */}
+	#copyRight .social{ float:none; margin:15px auto 0;}
+	.leftsection, .rightsection{ width:96%; float:none; padding:20px 0 0; border:none;}
+	#priceList h4{ font-size:20px; line-height:50px;}
+	.listSec li p, .listSec li span{ font-size:13px;}
+	.leftsection h5, .rightsection h5, .PricesFeatures .pfeaures h5 .listSec h5{ font-size:20px;}
+	.PricesFeatures{ width:96%; margin:35px auto 0;}
+	.PricesFeatures .pfeaures, .priceConditions p{ float:none; width:100%;}
+	.priceConditions{ line-height:32px; padding:15px 0}
+	.priceConditions p{ margin-bottom:15px; font-size:14px;}
+	#location .info_content #city_dropdown{margin-top: 4.7em;width: 95%;margin-left: 2%;}
+	#location .info_content h3, #timing .info_content h3, #contact .info_content h3{height: 52px;}
+	.info_icon img{width: 60px;}
+	#contact .mob_backward{margin: 0;margin-left: -16px;}
+	#location .info_content {
+    padding-left: 5px;
+	}
+	.coverage{padding-bottom: 70px;}
+	.subTitle {
+        font-size: 16px;
+    padding-top: 15px;
+    line-height: 23px;
+	}
+	.subText {
+        margin-top: 25px;
+    line-height: 21px;
+	}
+	.offer{font-size: 13px;}
+	.book_button {
+    padding-top: 11px;
+    height: 27px;
+    border-radius: 5px;
+	}
+	
+}
+
+@media screen and (max-width:320px){
+	.schedulePickUp h3{ font-size:16px;}
+	.schedulePickUp{margin:25px auto 0}
+	.schedulePickUp .pickUpInfo{ margin-top:20px;}
+	.schedulePickUp .pickUpInfo .phoneNo{ margin-top:10px; line-height:30px;}
+	.smallParallaxImg{ display:block; height:167px;}
+	#myLocation .checkLocation .locationfields input[type="text"], input[type="email"], input[type="number"]{ width:88%;}
+	#myLocation .checkLocation .locationfields input[type="submit"]{ width:100%}
+	#testimonails .testimonailsBox li .testimonailsText:after{ left:137px;}
+	.whyPoints .mainPoints li .pointText{ width:66%;}
+	#footer .services, #footer .contact{ width:96%; float:none; margin:0 auto 35px;}
+	.leftsection, .rightsection{ width:96%; float:none; padding:20px 0 0; border:none;}
+	#priceList h4{ font-size:20px; line-height:50px;}
+	.listSec li p, .listSec li span{ font-size:13px;}
+	.leftsection h5, .rightsection h5, .PricesFeatures .pfeaures h5 listSec h5{ font-size:20px;}
+	.PricesFeatures{ width:96%; margin:35px auto 0;}
+	.PricesFeatures .pfeaures, .priceConditions p{ float:none; width:100%;}
+	.priceConditions{ line-height:32px; padding:15px 0}
+	.priceConditions p{ margin-bottom:15px; font-size:14px;}
+	.funder img {width: 150px;}
+	#tawkchat-minified-wrapper{display: none;}
+	.coverage{padding-bottom: 50px;}
+	.mob_booking{width: 220px;}
+	.play_store,.app_store{width: 100px;}
+	.send_sms input{width: 120px;}
+	.sms_info .error{font-size: 12px;}
+	.subTitle{font-size: 16px;}
+
+}
+@media screen and (max-width:260px){
+	.send_sms input {
+    	width: 100px;
+	}
+}
